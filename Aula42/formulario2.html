@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formulário 2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <form class="p-3 was-validated">
+      <div class="my-3">
+        <label class="form-label">Digite seu Nome:</label>
+        <div class="input-group">
+          <span class="input-group-text">Nome</span>
+          <input type="text" name="nome" class="form-control">
+        </div>
+      </div>
+
+      <div class="my-3">
+        <div class="form-floating my-3">
+          <input type="email" class="form-control" id="email" placeholder="Digite o e-mail" name="email">
+          <label for="email">Email</label>
+        </div>
+      </div>
+
+      <div class="my-3">
+        <label class="form-label">Senha:</label>
+        <input type="password" name="senha" class="form-control" required>
+        <div class="valid-feedback">Senha OK</div>
+        <div class="invalid-feedback">Sem senha</div>
+      </div>
+
+      <div class="my-3">
+        <label class="form-label mt-3">Selecione uma Cor:</label>
+        <input type="color" name="senha" class="form-control-color d-block">
+      </div>
+
+      <div class="row">
+        <div class="my-3 col">
+          <label class="form-label mt-3 ">Telefone:</label>
+          <input type="text" name="tel" class="form-control">
+        </div>
+
+        <div class="my-3 col">
+          <label class="form-label mt-3">Nascimento:</label>
+          <input type="date" name="nas" class="form-control">
+        </div>
+      </div>
+
+      <div class="my-3">
+        <label class="form-label">Transporte:</label>
+        <select name="transporte" class="form-select">
+          <option>Carro</option>
+          <option>Motocicleta</option>
+          <option>Avião</option>
+          <option>Trem</option>
+          <option>Navio</option>
+        </select>
+      </div>
+
+      <div class="my-3">
+        <label class="form-label">Selecione o meio de deslocamento</label>
+        <div>
+          <input type="checkbox" name="terrestre" class="form-check-input" value="terrestre">
+          <label class="form-check-label">Terrestre</label>
+        </div>
+
+        <div>
+          <input type="checkbox" name="aereo" class="form-check-input" value="aereo">
+          <label class="form-check-label">Aereo</label>
+        </div>
+
+        <div>
+          <input type="checkbox" name="maritimo" class="form-check-input" value="maritimo">
+          <label class="form-check-label">Maritimo</label>
+        </div>
+      </div>
+
+      <div class="my-3">
+        <label class="form-label">Distância máxima:</label>
+        <input type="range" name="distancia" class="form-range">
+      </div>
+
+      <div class="my-3">
+        <input type="submit" value="Enviar" class="btn btn-primary">
+      </div>
+
+
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
